@@ -30,7 +30,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 # 📖Testing<a name="about-project"></a>
-In this project, I add some functionality to my application to make it interactive. The user will also be able to mark task completion by selecting the corresponding checkbox (or undo it by unchecking the checkbox). The updated tasks list will be stored in local storage.
+In this exercise, I write a few practical tests for JavaScript functions using the Jest library
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
