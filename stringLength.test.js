@@ -1,13 +1,19 @@
 const stringLength = require('./stringLength');
 
 describe('stringLength', () => {
-  it('should return the correct length of a string', () => {
-    const str1 = "Hello, world!";
-    const str2 = "Lorem ipsum dolor sit amet";
-    const str3 = "";
-    
-    expect(stringLength(str1)).toBe(13);
-    expect(stringLength(str2)).toBe(26);
-    expect(stringLength(str3)).toBe(0);
+  it('returns the correct length for a valid string', () => {
+    expect(stringLength('hello')).toBe(5);
+  });
+
+  it('throws an error for an empty string', () => {
+    expect(() => {
+      stringLength('');
+    }).toThrow('String must be at least 1 character long.');
+  });
+
+  it('throws an error for a string longer than 10 characters', () => {
+    expect(() => {
+      stringLength('ThisIsALongString');
+    }).toThrow('String cannot be longer than 10 characters.');
   });
 });
